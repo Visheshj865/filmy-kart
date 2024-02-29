@@ -7,7 +7,7 @@ const path = require('path');
 const bcrypt = require('bcrypt');
 const nodemailer = require('nodemailer');
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(bodyParser.json());
